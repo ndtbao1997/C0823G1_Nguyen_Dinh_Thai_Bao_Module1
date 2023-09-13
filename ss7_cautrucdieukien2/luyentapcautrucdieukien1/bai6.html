@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let salesLevel = prompt("Hãy nhập mức doanh số bán hàng:");
+        let commissionLevel;
+        if (salesLevel >= 10000) {
+            commissionLevel = salesLevel/100*8;
+            alert("Phần trăm hoa hồng của bạn nhận là: " + commissionLevel )
+        } else if (salesLevel >= 7500) {
+            commissionLevel = salesLevel/100*6;
+            alert("Phần trăm hoa hồng của bạn nhận là: " + commissionLevel )
+        } else {
+            commissionLevel = salesLevel/100*4;
+            alert("Phần trăm hoa hồng của bạn nhận là: " + commissionLevel )
+        }
+    </script>
+</body>
+</html>

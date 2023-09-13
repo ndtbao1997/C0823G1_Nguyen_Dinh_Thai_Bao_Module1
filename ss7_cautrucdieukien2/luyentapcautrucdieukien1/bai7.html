@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Thời gian gọi nội hạc</th>
+            <th>Thời gian gọi nội mạng</th>
+            <th>Thời gian gọi ngoại mạng</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="num1"/>
+            </td>
+            <td>
+                <input type="text" id="num2"/>
+            </td>
+            <td>
+                <input type="text" id="num3"/>
+            </td>
+            <td><button onclick="phoneCharges()">Thành tiền</button> </td>
+        </tr>
+    </table>
+    <p id="result"></p>
+    <script>
+        function phoneCharges() {
+            let fee = 22000;
+            let a = document.getElementById("num1").value;
+            let b = document.getElementById("num2").value;
+            let c = document.getElementById("num3").value;
+            let Charges = a * 220 + b * 790 + c * 1000 + fee;
+            result = "Cước điện thoại tháng này của bạn là: " + Charges + "Đ"
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

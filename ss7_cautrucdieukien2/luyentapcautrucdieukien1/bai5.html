@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+      let point1 = prompt("Nhập điểm kiểm tra: ");
+      let point2 = prompt("Nhập điểm thi giữa kì: ");
+      let point3 = prompt("Nhập điểm thi cuối kì: ");
+      let average = (point1+point2+point3*2)/4;
+      if (point1 >= 8 && point2 >= 8 && point3 >=8) {
+        alert("Bạn thuộc loại giỏi!")
+      } else if (point1 >= 6 && point2 >= 6 && point3 >= 6 && average >= 7) {
+        alert("Bạn là học sinh khá!")
+      } else if (point1 >= 5 && point2 >= 5 && point3 >=5 && average >= 5) {
+        alert("Bạn là học sinh trung bình!")
+      } else {
+        alert("Bạn là học sinh yếu!")
+      }
+    </script>
+</body>
+</html>
