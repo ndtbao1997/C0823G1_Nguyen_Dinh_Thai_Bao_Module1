@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let monthlySalary = prompt("Nhập mức lương hàng tháng của bạn:");
+    let tax = "";
+    if (monthlySalary <= 5000000) {
+        tax = monthlySalary / 100 * 5;
+        alert("Thuế thu nhập cá nhân của bạn là: " + tax + "Đ")
+    } else if (monthlySalary <= 10000000) {
+        tax = monthlySalary / 100 * 10;
+        alert("Thuế thu nhập cá nhân của bạn là: " + tax + "Đ")
+    } else if (monthlySalary <= 18000000) {
+        tax = monthlySalary / 100 * 15;
+        alert("Thuế thu nhập cá nhân của bạn là: " + tax + "Đ")
+    } else if (monthlySalary <= 32000000) {
+        tax = monthlySalary / 100 * 20;
+        alert("Thuế thu nhập cá nhân của bạn là: " + tax + "Đ")
+    } else if (monthlySalary <= 52000000) {
+        tax = monthlySalary / 100 * 25;
+        alert("Thuế thu nhập cá nhân của bạn là: " + tax + "Đ")
+    } else if (monthlySalary <= 80000000) {
+        tax = monthlySalary / 100 * 30;
+        alert("Thuế thu nhập cá nhân của bạn là: " + tax + "Đ")
+    } else {
+        tax = monthlySalary / 100 * 35;
+        alert("Thuế thu nhập cá nhân của bạn là: " + tax + "Đ")
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = +prompt("Số tiền bạn đã vay là:");
+    let month = +prompt("Số tháng bạn đã vay:");
+    let interestRate = +prompt("Lãi xuất hàng tháng:");
+    let b = Math.pow((1+interestRate/100),month);
+    let total = money*b;
+    alert("Số tiền bạn phải trả là:" + total + "Đ")
+</script>
+</body>
+</html>

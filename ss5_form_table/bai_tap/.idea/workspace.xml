@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a209d02-4055-48c6-94fc-ece680f3ba56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien1/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien1/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien1/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien1/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien1/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien1/bai6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien1/bai7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobangnangcao2.html" beforeDir="false" afterPath="$PROJECT_DIR$/taobangnangcao2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taoformlaygiaodienkhachhang.html" beforeDir="false" afterPath="$PROJECT_DIR$/taoformlaygiaodienkhachhang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/BMI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien2/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien2/bai10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien2/bai11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien2/bai12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien2/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien2/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien2/bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien2/bai5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien2/bai6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien2/bai7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien2/bai8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/luyentapcautrucdieukien2/bai9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_cautrucdieukien2/switch-case.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,28 +29,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2VLMIzoqAdLIa3s2EUZ7Q0kN9cW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,7 +59,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694610832102</updated>
-      <workItem from="1694610833148" duration="1359000" />
+      <workItem from="1694610833148" duration="1970000" />
+      <workItem from="1694674130317" duration="20000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let kWh = prompt("Nhập số chữ điện bạn đã dùng vào:");
+        let total = "";
+        const level1 = 1.678;
+        const level2 = 1.734;
+        const level3 = 2.014;
+        if (kWh <= 50) {
+            total = kWh*level1;
+            alert("Tiền điện tháng này của bạn là:" + total + "Đ")
+        } else if (kWh <= 100) {
+            total = 50*level1+(kWh-50)*level2;
+            alert("Tiền điện tháng này của bạn là:" + total + "Đ")
+        } else {
+            total = 50*level1+50*level2+(kWh-100)*level3;
+            alert("Tiền điện tháng này của bạn là:" + total + "Đ")
+        }
+    </script>
+</body>
+</html>
