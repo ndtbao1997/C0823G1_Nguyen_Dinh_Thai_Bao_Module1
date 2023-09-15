@@ -1,4 +1,4 @@
-function Convert() {
+function convert() {
     let Amount = document.getElementById("Amount").value;
     let FromC = document.getElementById("From").value;
     let To = document.getElementById("To").value;
