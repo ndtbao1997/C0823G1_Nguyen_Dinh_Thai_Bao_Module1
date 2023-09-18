@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a;
+    let total = 0;
+    let countSNT = 0;
+    for (a = 0; countSNT <= 30;) {
+        if (a % 7 === 0) {
+            total += a;
+            countSNT += 1;
+            console.log(total);
+        }
+        a++;
+    }
+    document.write(" tổng 30 số đầu tiên chia hết cho 7 là : " + total);
+</script>
+</body>
+</html>

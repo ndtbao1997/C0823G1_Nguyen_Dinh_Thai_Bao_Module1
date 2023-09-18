@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="bottomLeft()">Góc vuông nằm phía dưới, bên trái</button>
+<br>
+<br>
+<button onclick="upperLeft()">Góc vuông nằm phía trên, bên trái</button>
+<br>
+<br>
+<button onclick="upperRight()">Góc vuông nằm phía trên, bên phải</button>
+<br>
+<br>
+<button onclick="bottomRight()">Góc vuông nằm phía dưới, bên phải</button>
+<script>
+    function bottomLeft() {
+        let i, j;
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    }
+
+    function upperLeft() {
+        let i, j;
+        for (i = 1; i <= 5; i++) {
+            for (j = 5; j >= i; j--) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    }
+
+    function upperRight() {
+        let i, k, j;
+        for (i = 1; i <= 5; i++) {
+            for (k = 1; k <= i; k++) {
+                document.write("&nbsp;&nbsp;")
+            }
+            for (j = 5; j >= i; j--) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    }
+
+    function bottomRight() {
+        let i, k, j;
+        for (i = 1; i <= 5; i++) {
+            for (k = 5; k > i; k--) {
+                document.write("&nbsp;&nbsp;")
+            }
+            for (j = 1; j <= i; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    }
+</script>
+
+</body>
+</html>

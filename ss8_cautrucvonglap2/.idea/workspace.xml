@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c9c9b18-d577-4f1f-bfd7-ca4eec09b27e" name="Changes" comment="" />
+    <list default="true" id="b4df0641-2281-47c9-b17d-b26d8920dd3e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HienThiCacSoNguyenToDauTien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SinhBangCuuChuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luyentapvonglap2/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luyentapvonglap2/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luyentapvonglap2/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luyentapvonglap2/bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luyentapvonglap2/bai5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_cautrucdieukien2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_cautrucdieukien2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai2.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +27,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
+  "associatedIndex": 8
 }]]></component>
-  <component name="ProjectId" id="2VQX7tZm9Izwm3BGCfObqU0i1b3" />
+  <component name="ProjectId" id="2VYNt0VWmpoiKrgnhDoXVig15hP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,12 +50,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1c9c9b18-d577-4f1f-bfd7-ca4eec09b27e" name="Changes" comment="" />
-      <created>1694769113334</created>
+      <changelist id="b4df0641-2281-47c9-b17d-b26d8920dd3e" name="Changes" comment="" />
+      <created>1695009264523</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1694769113334</updated>
-      <workItem from="1694769114333" duration="877000" />
+      <updated>1695009264523</updated>
+      <workItem from="1695009265532" duration="1960000" />
     </task>
     <servers />
   </component>

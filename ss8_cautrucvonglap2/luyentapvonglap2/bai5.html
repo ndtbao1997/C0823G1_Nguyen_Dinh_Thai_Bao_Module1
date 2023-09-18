@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let initialAmount = +prompt("Số tiền ban đầu bạn đã vay là");
+    let months = +prompt("Số tháng bạn đã vay là");
+    let interest = +prompt("Lãi xuất hàng tháng là");
+    let convertedInterestrate = interest / 100 + 1
+    let total;
+    for (i = 1; i <= months; i++) {
+        total = initialAmount * convertedInterestrate;
+        initialAmount = total;
+    }
+    document.write("Tổng số tiền bạn phải trả là : " + total + " Đ");
+</script>
+
+</body>
+</html>

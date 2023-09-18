@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a, b;
+    let sout = "<table border='1' cellpadding='10px'>";
+    for (a = 1; a <= 10; a++) {
+        sout = sout + "<tr>";
+        for (b = 1; b <= 10; b++) {
+            sout = sout + "<td>" + b + "*" + a + "=" + a * b + "</td>";
+        }
+        sout = sout + "</tr>"
+        console.log(sout);
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+</script>
+
+</body>
+</html>

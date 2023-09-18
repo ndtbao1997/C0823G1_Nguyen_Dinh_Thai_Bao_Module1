@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="start()">Bắt đầu</button>
+<script>
+    function start() {
+        let num1 = +prompt("Số bạn muốn đoán trong khoảng nào");
+        let num2 = Math.floor(Math.random() * num1);
+        let num3 = +prompt("Bạn hãy nhập số bạn muốn đoán vào");
+        let i = 1;
+        while (num3 !== num2) {
+            if (num3 > num2) {
+                alert("số bạn đoán lớn hơn số ngẫu nhiên xin mời bạn đoán lại")
+            } else {
+                alert("số bạn đoán bé hơn số ngẫu nhiên xin mời bạn đoán lại")
+            }
+            num3 = +prompt("Bạn hãy nhập số bạn muốn đoán vào");
+            i++;
+            if (i++ > 3) {
+                break;
+            }
+        }
+        if (i > 3) {
+            alert("bạn đã hết số lượt đoán")
+        } else {
+            alert("bạn đã dự đoán chính xác xin chúc mừng bạn")
+        }
+    }
+</script>
+
+</body>
+</html>

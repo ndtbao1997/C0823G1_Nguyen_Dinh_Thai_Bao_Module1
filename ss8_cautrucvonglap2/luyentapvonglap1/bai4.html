@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = 0;
+    let num2 = 1;
+    let nextNum;
+    let i = 1;
+    do {
+        console.log(num1);
+        nextNum = num1 + num2;
+        num1 = num2;
+        num2 = nextNum;
+        i++;
+    } while (num1 % 5 !== 0);
+    alert(num1 + " là số đầu tiên chia hết cho 5")
+
+</script>
+</body>
+</html>
