@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4df0641-2281-47c9-b17d-b26d8920dd3e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f3c3a474-c8f4-41e3-8c4f-7b0c26599fa9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ss9_mang/SuDungCacHamCoSanCuaMang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luyentapvonglap1/bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../luyentapvonglap1/bai2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,12 +12,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
+  "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2VYNt0VWmpoiKrgnhDoXVig15hP" />
+  <component name="ProjectId" id="2Vdwx86d7J1cdUPgIbfsaOdcj2V" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,22 +28,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b4df0641-2281-47c9-b17d-b26d8920dd3e" name="Changes" comment="" />
-      <created>1695009264523</created>
+      <changelist id="f3c3a474-c8f4-41e3-8c4f-7b0c26599fa9" name="Changes" comment="" />
+      <created>1695179508182</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1695009264523</updated>
-      <workItem from="1695009265532" duration="2627000" />
+      <updated>1695179508182</updated>
+      <workItem from="1695179509183" duration="16000" />
     </task>
     <servers />
   </component>
