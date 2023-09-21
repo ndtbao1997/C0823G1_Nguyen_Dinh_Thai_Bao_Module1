@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hãy nhập mảng a gồm 10 phần tử số nguyên. Lưu ý các số nguyên cách nhau bởi dấu phẩy.
+<br><br>
+<input type="text" id="num"/>
+<br><br>
+Hãy nhập mảng a gồm 10 phần tử số nguyên. Lưu ý các số nguyên cách nhau bởi dấu phẩy.
+<br><br>
+<input type="text" id="num1"/>
+<br><br>
+<button onclick="merge()">Gộp mảng</button>
+<br><br>
+<p id="result"></p>
+<script>
+    function merge() {
+        let seriesA = document.getElementById("num").value;
+        let seriesB = document.getElementById("num1").value;
+        let strA = seriesA.split(",");
+        let strB = seriesB.split(",");
+        let strC = new Array(20);
+        if (strA.length === 10 && strB.length === 10) {
+            strC = strA.concat(strB);
+            document.getElementById("result").innerHTML = strC;
+        } else {
+            document.getElementById("result").innerText = "Số lượng con số bạn nhập vào chưa chính xác hoặc không phải là chữ số. Xin mời bạn nhập lại.";
+        }
+    }
+</script>
+</body>
+</html>

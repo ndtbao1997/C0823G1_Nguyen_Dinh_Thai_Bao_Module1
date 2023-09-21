@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hãy nhập vào 10 số. Lưu ý các số cách nhau bởi dấu phẩy
+<br>
+<br>
+<input type="text" id="num"/>
+<button onclick="check()">Kiểm tra</button>
+<p id="result"></p>
+<p id="result1"></p>
+<script>
+    function check() {
+        let series = document.getElementById("num").value;
+        let str = series.split(",");
+        if (str.length === 10) {
+            let max = str[0];
+            for (let i = 0; i < str.length; i++) {
+                if (+str[i] > max) {
+                    max = str[i];
+                }
+            }
+            let location = str.indexOf(max);
+            document.getElementById("result").innerHTML = "Giá trị lớn nhất là: " + max;
+            document.getElementById("result1").innerHTML = "Nằm ở vị trí là: " + location;
+        } else {
+            document.getElementById("result").innerText = "Số lượng con số bạn nhập vào chưa chính xác hoặc không phải là chữ số. Xin mời bạn nhập lại.";
+        }
+    }
+</script>
+</body>
+</html>

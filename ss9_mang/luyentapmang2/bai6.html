@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hãy nhập vào một mảng kí tự.
+<br><br>
+<input type="text" id="text"/>
+<button onclick="change()">Change</button>
+<p id="result"></p>
+<script>
+    function change() {
+        let characters = document.getElementById("text").value;
+        let str = characters.split("");
+        let a = [];
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] === "-") {
+                str[i] = "_";
+                a.push(str[i]);
+            } else {
+                a.push(str[i]);
+            }
+        }
+        document.getElementById("result").innerHTML = a.join('');
+    }
+</script>
+</body>
+</html>

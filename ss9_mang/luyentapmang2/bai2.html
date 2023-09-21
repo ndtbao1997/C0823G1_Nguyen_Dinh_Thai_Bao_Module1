@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hãy nhập một mảng các kí tự bạn muốn. Các kí tự cách nhau bởi dấu phẩy.
+<br><br>
+<input type="text" id="text"/>
+<button onclick="reverse()">Đảo ngược</button>
+<p id="result"></p>
+<script>
+    function reverse() {
+        let characters = document.getElementById("text").value;
+        let str = characters.split(",");
+        document.getElementById("result").innerText = str.reverse();
+    }
+</script>
+</body>
+</html>

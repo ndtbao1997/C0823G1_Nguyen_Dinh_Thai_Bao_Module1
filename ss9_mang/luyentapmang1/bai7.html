@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hãy nhập một mảng 10 số nguyên. Lưu ý các số các số nguyên cách nhau bằng dấu phẩy.
+<br>
+<br>
+<input type="text" id="num"/>
+<br>
+<br>
+Hãy nhập một số nguyên bất kì mà bạn muốn kiểm tra
+<br>
+<br>
+<input type="text" id="num1"/>
+<button onclick="check()">Kiểm tra</button>
+<p id="result"></p>
+<script>
+    function check() {
+        let series = document.getElementById("num").value;
+        let str = series.split(",");
+        let any = document.getElementById("num1").value;
+        if (str.length === 10 && any !== 0) {
+            for (let i = 0; i < str.length; i++) {
+                if (str.indexOf(any) !== -1) {
+                    str.splice(str.indexOf(any), 1);
+                    str.push("0")
+                }
+            }
+            document.getElementById("result").innerText = str;
+        } else {
+            document.getElementById("result").innerText = "Số lượng con số bạn nhập vào chưa chính xác hoặc không phải là chữ số. Xin mời bạn nhập lại.";
+        }
+    }
+</script>
+</body>
+</html>

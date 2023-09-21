@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hãy nhập một mảng các kí tự bạn muốn. Các kí tự cách nhau bởi dấu phẩy.
+<br><br>
+<input type="text" id="text"/>
+<button onclick="countnumbers()">Đếm</button>
+<p id="result"></p>
+<script>
+    function countnumbers() {
+        let characters = document.getElementById("text").value;
+        let str = characters.split(",");
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (!isNaN(str[i])) {
+                count++;
+            }
+        }
+        document.getElementById("result").innerText = count;
+    }
+</script>
+</body>
+</html>

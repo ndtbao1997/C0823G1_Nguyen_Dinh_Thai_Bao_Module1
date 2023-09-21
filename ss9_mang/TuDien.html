@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập từ :
+<input type="text" id="english"/>
+<button onclick="change()">Dịch</button>
+<p id="vietnam"></p>
+<script>
+    function change() {
+        let vocabulary = document.getElementById("english").value;
+        let eng = ["banana", "apple"];
+        let viet = ["chuối", "táo"];
+        let notAvailable = "Từ bạn nhập vào không có trong từ điển"
+        for (i = 0; i < eng.length; i++) {
+            if (eng.indexOf(vocabulary) !== -1) {
+                document.getElementById("vietnam").innerHTML = viet[eng.indexOf(vocabulary)];
+            } else
+                document.getElementById("vietnam").innerHTML = notAvailable;
+
+        }
+    }
+</script>
+</body>
+</html>

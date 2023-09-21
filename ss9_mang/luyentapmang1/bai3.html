@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hãy nhập vào mảng số nguyên mà bạn muốn kiểm tra. Lưu ý các số cách nhau bằng dấu phẩy
+<br>
+<br>
+<input type="text" id="num"/>
+<button onclick="check()">Kiểm tra</button>
+<p id="result"></p>
+<p id="result1"></p>
+<script>
+    function check() {
+        let series = document.getElementById("num").value;
+        let str = series.split(",");
+        let max;
+        let total = 0;
+        for (let i = 0; i < str.length; i++) {
+            total += +str[i];
+            max = str[0];
+            if (+str[i] > max) {
+                max = str[i];
+            }
+        }
+        let average = total / str.length;
+        document.getElementById("result").innerText = "Giá trị lớn nhất trong dãy số là: " + max;
+        document.getElementById("result1").innerText = "Giá trị trung bình của dãy số là: " + average;
+    }
+</script>
+</body>
+</html>

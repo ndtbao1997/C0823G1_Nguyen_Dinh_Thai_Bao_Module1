@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hãy nhập một đoạn tiếng Anh
+<br><br>
+<input type="text" id="text"/>
+<button onclick="check()">Kiểm tra nguyên âm</button>
+<p id="result"></p>
+<script>
+    function check() {
+        let paragraph = document.getElementById("text").value;
+        let str = paragraph.split('');
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            switch (str[i]) {
+                case "u":
+                case "e":
+                case "o":
+                case "a":
+                case "i":
+                    count++;
+                    break;
+            }
+        }
+        document.getElementById("result").innerText = count;
+    }
+</script>
+</body>
+</html>

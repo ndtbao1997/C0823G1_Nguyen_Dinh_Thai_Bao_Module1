@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hãy viết vào một đoạn văn bạn muốn.
+<br><br>
+<input type="text" id="text"/>
+<button onclick="check()">Số lượng từ</button>
+<p id="result"></p>
+<script>
+    function check() {
+        let paragraph = document.getElementById("text").value;
+        let str = paragraph.split('.').join('').split('?').join('').split(' ');
+        console.log(str)
+        document.getElementById("result").innerText = str.length;
+    }
+</script>
+</body>
+</html>
