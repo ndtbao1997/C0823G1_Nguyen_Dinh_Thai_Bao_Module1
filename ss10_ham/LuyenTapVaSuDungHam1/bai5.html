@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Hãy nhập tên một ngôi sao mà bạn muốn tìm.")
+    checkStar(a);
+    function checkStar(a){
+        let starName = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let constellationName = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        if (starName.indexOf(a) !== -1){
+            a = constellationName[starName.indexOf(a)];
+            alert("Chòm sao tương ứng là : " + a);
+        } else {
+            alert("Ngôi sao bạn nhập không có trong chòm sao");
+        }
+    }
+</script>
+</body>
+</html>

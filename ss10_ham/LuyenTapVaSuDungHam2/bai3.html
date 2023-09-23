@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function factorial(a) {
+        if (a >= 0) {
+            if (a === 0) {
+                alert("Giai thừa của 0 là 1");
+            } else {
+                let factorial = 1;
+                for (let i = 1; i <= a; i++) {
+                    factorial *= i;
+                }
+                alert("Giai thừa của " + a + " là " + factorial);
+            }
+        } else {
+            alert("Số bạn nhập vào không có giai thừa")
+        }
+    }
+
+    let x = parseInt(prompt("Hãy nhập vào một số bất kì"));
+    factorial(x);
+</script>
+
+</body>
+</html>

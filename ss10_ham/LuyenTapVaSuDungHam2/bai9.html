@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let characterArray = prompt("Nhập số lượng phần từ mà bạn muốn nhập:");
+    let character = new Array(characterArray);
+    for (let i = 0; i < characterArray; i++) {
+        character[i] = prompt(`Nhập kí tự thứ ${i} vào`);
+    }
+    let character1 = prompt("Nhập kí tự bạn muốn Check");
+    checkCharacter(character, character1);
+
+    function checkCharacter(array, x) {
+        let count = 0;
+        for (let j = 0; j < array.length; j++) {
+            if (array[j] === x) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            alert("Kí tự bạn nhập vào không có trong mảng bạn vừa nhập");
+        } else {
+            alert("Kí tự " + x + " xuất hiện " + count + " lần trong mảng");
+        }
+    }
+</script>
+</body>
+</html>

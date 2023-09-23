@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberofElements = +prompt("nhập vào số phần từ của mảng");
+    let arr = new Array(numberofElements);
+    for (let i = 0; i < numberofElements; i++) {
+        arr[i] = parseInt(prompt(`Nhập số nguyên ${i} vào`))
+    }
+
+    function reverseArr(array) {
+        let array1 = array.reverse();
+        alert("Chiều ngược lại của mảng là: " + array1);
+    }
+
+    reverseArr(arr);
+</script>
+
+</body>
+</html>
