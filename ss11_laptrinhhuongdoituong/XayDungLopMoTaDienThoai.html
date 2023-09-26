@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="mobile4()" style="width: 150px">Check bật tắt</button>
+<br><br>
+<button onclick="mobile5()" style="width: 150px">Bật điện thoại</button>
+<br><br>
+<button onclick="mobile6()" style="width: 150px">Tắt điện thoại</button>
+<br><br>
+<button onclick="mobile2()" style="width: 150px">Soạn tin nhắn</button>
+<br><br>
+<button onclick="mobile1()" style="width: 150px">Lưu tin đang soạn</button>
+<br><br>
+<button onclick="mobile8()" style="width: 150px">Gửi tin nhắn</button>
+<br><br>
+<button onclick="mobile3()" style="width: 150px">Lưu tin đã gửi</button>
+<br><br>
+<button onclick="mobile10()" style="width: 150px">Hộp thư đi</button>
+<br><br>
+<button onclick="mobile7()" style="width: 150px">Tin nhắn đến</button>
+<br><br>
+<button onclick="mobile9()" style="width: 150px">Hộp thư đến</button>
+<br><br>
+<button onclick="mobile11()" style="width: 150px">Sạc điện thoại</button>
+<script>
+    class Mobile {
+        constructor(battery, name, inbox, messages, status) {
+            this.battery = battery;
+            this.name = name;
+            this.inbox = inbox;
+            this.messages = messages;
+            this.status = status;
+        }
+
+        saveMessages() {
+            if (0 < this.battery && this.battery <= 100 && this.status === "on") {
+                alert("Tin nhắn đã lưu");
+                return this.battery--;
+            }
+        }
+
+        composeMessages() {
+            if (0 < this.battery && this.battery <= 100 && this.status === "on") {
+                let compose = prompt("Hãy soạn tin nhắn");
+                return this.battery--;
+            }
+        }
+
+        saveSentMessages() {
+            if (0 < this.battery && this.battery <= 100 && this.status === "on") {
+                alert("Tin nhắn gửi đi đã được lưu");
+                return this.battery--;
+            }
+        }
+
+        checkMobileonoroff() {
+            if (this.status === "on") {
+                alert("Điện thoại đang bật");
+            } else {
+                alert("Điện thoại đang tắt");
+            }
+            if (0 < this.battery <= 100) {
+                this.status = "on";
+                this.inbox = true;
+                this.messages = true;
+            } else {
+                this.status = "off";
+                this.inbox = false;
+                this.messages = false;
+            }
+
+            return this.battery--;
+        }
+
+        turnonMobile() {
+            if (0 < this.battery && this.battery <= 100 && this.status === "off") {
+                alert("Bạn đã bật điện thoại");
+                return this.battery--;
+            }
+        }
+
+        turnoffMobile() {
+            if (0 < this.battery && this.battery <= 100 && this.status === "on") {
+                alert("Bạn đã tắt điện thoại");
+                this.status = "off";
+                return this.battery--;
+            }
+        }
+
+        receiveMessages() {
+            if (0 < this.battery && this.battery <= 100 && this.status === "on") {
+                confirm("Bạn có 1 tin nhắn gửi đến! Bạn có muốn đọc nó hay không?");
+                return this.battery--;
+            }
+        }
+
+        sendMessages() {
+            if (0 < this.battery && this.battery <= 100 && this.status === "on") {
+                alert("Tin nhắn của bạn đã gửi");
+                return this.battery--;
+            }
+        }
+
+        seeNewsInbox() {
+            if (0 < this.battery && this.battery <= 100 && this.status === "on") {
+                alert("Hiển thị tin nhắn hộp thư đến");
+                return this.battery--;
+            }
+        }
+
+        viewSentMessages() {
+            if (0 < this.battery && this.battery <= 100 && this.status === "on") {
+                alert("Hiển thị các tin nhắn đã gửi đi");
+                return this.battery--;
+            }
+        }
+
+        chargeMobile() {
+            alert("Điện thoại của bạn đang sạc " + this.battery++ + "%");
+        }
+    }
+
+    let mobile = new Mobile(10, "iphone", true, true, "on");
+
+    function mobile1() {
+        mobile.saveMessages();
+    }
+
+    function mobile2() {
+        mobile.composeMessages();
+    }
+
+    function mobile3() {
+        mobile.saveSentMessages();
+    }
+
+    function mobile4() {
+        mobile.checkMobileonoroff();
+    }
+
+    function mobile5() {
+        mobile.turnonMobile();
+    }
+
+    function mobile6() {
+        mobile.turnoffMobile();
+    }
+
+    function mobile7() {
+        mobile.receiveMessages();
+    }
+
+    function mobile8() {
+        mobile.sendMessages();
+    }
+
+    function mobile9() {
+        mobile.seeNewsInbox()
+    }
+
+    function mobile10() {
+        mobile.viewSentMessages();
+    }
+
+    function mobile11() {
+        mobile.chargeMobile()
+    }
+</script>
+</body>
+</html>

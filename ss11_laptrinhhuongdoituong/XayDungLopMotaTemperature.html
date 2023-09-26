@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(degreeC) {
+            this.degreeC = degreeC;
+        }
+
+        getchangeDegreeF() {
+            return this.degreeC * 1.8 + 32;
+        }
+
+        getchangeDegreeK() {
+            return this.degreeC + 273.15;
+        }
+    }
+
+    let degreec = +prompt("Hãy nhập độ C bạn muốn đổi");
+    if (degreec >= -273) {
+        let tempurature = new Temperature(degreec);
+        let degreeF = tempurature.getchangeDegreeF();
+        let degreeK = tempurature.getchangeDegreeK();
+        document.write("Nhiệt độ F: " + degreeF + "F" + "<br>" + "Nhiệt độ K: " + degreeK + "K")
+    } else {
+        alert("Nhiệt độ bạn nhập vào không đúng");
+    }
+
+</script>
+</body>
+</html>

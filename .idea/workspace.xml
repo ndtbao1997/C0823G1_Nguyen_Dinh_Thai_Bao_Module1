@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48f72fbb-e716-4097-af8a-6db3d7639f81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss8_cautrucvonglap2/luyentapvonglap2/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_cautrucvonglap2/luyentapvonglap2/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_cautrucvonglap2/luyentapvonglap2/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_cautrucvonglap2/luyentapvonglap2/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_cautrucvonglap2/luyentapvonglap2/bai5.html" afterDir="false" />
+    <list default="true" id="9e52e9be-f931-40e3-bc32-3f1afcee6230" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ss10_ham/LuyenTapVaSuDungHam2/aaaa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10_ham/UngDungVeQuanLySanPhamSuDungHam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10_ham/UngDungVeQuanLySanPhamSuDungHam.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_laptrinhhuongdoituong/XayDungLopMoTaDienThoai.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_laptrinhhuongdoituong/XayDungLopMoTaHinhChuNhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_laptrinhhuongdoituong/XayDungLopMotaTemperature.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_laptrinhhuongdoituong/aa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_cautrucvonglap2/UngDungVuiDoYouLoveMe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_cautrucdieukien2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_cautrucdieukien2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_cautrucvonglap2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_cautrucvonglap2/bai1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_cautrucvonglap2/bai2.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +31,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
+  "customColor": "",
+  "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="2VVuBrDtBo0Q5OjQys3Gy96L9DA" />
+  <component name="ProjectId" id="2Vs3SFmH23i3zXzfLrTSdGCUhiC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,12 +56,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="48f72fbb-e716-4097-af8a-6db3d7639f81" name="Changes" comment="" />
-      <created>1694933436066</created>
+      <changelist id="9e52e9be-f931-40e3-bc32-3f1afcee6230" name="Changes" comment="" />
+      <created>1695610959163</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1694933436066</updated>
-      <workItem from="1694933437080" duration="26449000" />
+      <updated>1695610959163</updated>
+      <workItem from="1695610960187" duration="19273000" />
     </task>
     <servers />
   </component>
