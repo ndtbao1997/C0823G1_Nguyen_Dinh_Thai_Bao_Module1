@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<h1>Mobile</h1>
 <button onclick="mobile4()" style="width: 150px">Check bật tắt</button>
 <br><br>
 <button onclick="mobile5()" style="width: 150px">Bật điện thoại</button>
@@ -26,6 +27,16 @@
 <button onclick="mobile9()" style="width: 150px">Hộp thư đến</button>
 <br><br>
 <button onclick="mobile11()" style="width: 150px">Sạc điện thoại</button>
+<br><br>
+<h1>Nokia</h1>
+<button onclick="nokia1()" style="width: 150px">Soạn tin nhắn</button>
+<br><br>
+<button onclick="nokia2()" style="width: 150px">Gửi tin nhắn</button>
+<br><br>
+<button onclick="nokia3()" style="width: 150px">Lưu tin đã gửi</button>
+<br><br>
+<button onclick="nokia4()" style="width: 150px">Hộp thư đi</button>
+<br><br>
 <script>
     class Mobile {
         constructor(battery, name, inbox, messages, status) {
@@ -46,6 +57,8 @@
         composeMessages() {
             if (0 < this.battery && this.battery <= 100 && this.status === "on") {
                 let compose = prompt("Hãy soạn tin nhắn");
+                this.messages.push(compose);
+                console.log(this.messages)
                 return this.battery--;
             }
         }
@@ -58,21 +71,16 @@
         }
 
         checkMobileonoroff() {
+            if (0 < this.battery <= 100) {
+                this.status = "on";
+            } else {
+                this.status = "off";
+            }
             if (this.status === "on") {
                 alert("Điện thoại đang bật");
             } else {
                 alert("Điện thoại đang tắt");
             }
-            if (0 < this.battery <= 100) {
-                this.status = "on";
-                this.inbox = true;
-                this.messages = true;
-            } else {
-                this.status = "off";
-                this.inbox = false;
-                this.messages = false;
-            }
-
             return this.battery--;
         }
 
@@ -107,14 +115,14 @@
 
         seeNewsInbox() {
             if (0 < this.battery && this.battery <= 100 && this.status === "on") {
-                alert("Hiển thị tin nhắn hộp thư đến");
+                alert(this.inbox);
                 return this.battery--;
             }
         }
 
         viewSentMessages() {
             if (0 < this.battery && this.battery <= 100 && this.status === "on") {
-                alert("Hiển thị các tin nhắn đã gửi đi");
+                alert(this.messages);
                 return this.battery--;
             }
         }
@@ -124,7 +132,7 @@
         }
     }
 
-    let mobile = new Mobile(10, "iphone", true, true, "on");
+    let mobile = new Mobile(10, "iphone", [], [], "on");
 
     function mobile1() {
         mobile.saveMessages();
@@ -167,7 +175,20 @@
     }
 
     function mobile11() {
-        mobile.chargeMobile()
+        mobile.chargeMobile();
+    }
+    let nokia = new Mobile(20, "nokia", [], [], "on");
+    function nokia1(){
+        nokia.composeMessages();
+    }
+    function nokia2(){
+        nokia.sendMessages()
+    }
+    function nokia3(){
+        nokia.saveSentMessages()
+    }
+    function nokia4(){
+        nokia.viewSentMessages()
     }
 </script>
 </body>
