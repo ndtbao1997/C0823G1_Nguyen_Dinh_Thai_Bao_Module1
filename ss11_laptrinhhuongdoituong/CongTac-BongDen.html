@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class EletricLamp {
+        constructor(status) {
+            this.status = status;
+        }
+
+        getStatus() {
+            return this.status;
+        }
+
+        setStatus(status) {
+            this.status = status;
+        }
+
+        checkStatus() {
+            if (this.status === true) {
+                document.write("Bóng đèn đã bật" + "<br>");
+            } else {
+                document.write("Bóng đèn đã tắt" + "<br><br>");
+            }
+        }
+    }
+
+    class SwitchButton {
+        constructor(lamp, status1) {
+            this.status1 = status1;
+            this.lamp = lamp
+        }
+
+        getStatus1() {
+            return this.status1;
+        }
+
+        getLamp() {
+            return this.lamp;
+        }
+
+        setStatus1(status1) {
+            this.status1 = status1;
+        }
+
+        setLamp(lamp) {
+            this.lamp = lamp;
+        }
+
+        switchOff() {
+            this.lamp.status = false;
+            return this.status1 = false;
+        }
+
+        switchOn() {
+            this.lamp.status = true;
+            return this.status1 = true;
+        }
+    }
+
+
+    let eletricLamp = new EletricLamp(false);
+    let switchButton = new SwitchButton(eletricLamp, false);
+    for (let i = 1; i <= 10; i++) {
+        switchButton.switchOn();
+        eletricLamp.checkStatus();
+        switchButton.switchOff();
+        eletricLamp.checkStatus();
+    }
+</script>
+</body>
+</html>

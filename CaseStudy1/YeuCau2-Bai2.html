@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h = 5;
+    let k = 2*h-1;
+    let tab = "<table>";
+    for (let i = 1; i<= h ; i++){
+        tab += "<tr>";
+        for (let j = 1; j <= k; j++){
+            if (i === h || j === h){
+                tab += "<td>*</td>";
+            } else {
+                tab += "<td></td>"
+            }
+        }
+        tab += "</tr>";
+    }
+    document.write(tab + "</table>")
+</script>
+</body>
+</html>

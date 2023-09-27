@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h = +prompt("Nhập chiều cao mà bạn muốn");
+    let tab = "<table>";
+    for (let i = 1; i <= h; i++) {
+        tab += "<tr>";
+        for (let j = 1; j <= h; j++)
+            if (j === 1 || j === i || i === h) {
+                tab += "<td>*</td>";
+            } else {
+                tab += "<td></td>";
+            }
+        tab += "</tr>";
+    }
+    document.write(tab + "</table>")
+</script>
+</body>
+</html>
