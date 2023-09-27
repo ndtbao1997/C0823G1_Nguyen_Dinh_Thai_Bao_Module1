@@ -4,28 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c784472-93fb-433c-935b-38e7b5db9438" name="Changes" comment="">
+    <list default="true" id="c3845c28-defd-42e8-a58b-ec04ccf21e9e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CaseStudy1/YeuCau1-Bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CaseStudy1/YeuCau1-Bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_laptrinhhuongdoituong/Adam-and-Eva.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_laptrinhhuongdoituong/GameDonGian.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_laptrinhhuongdoituong/XayDungLopMoTaDienThoai.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_laptrinhhuongdoituong/XayDungLopMoTaDienThoai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_laptrinhhuongdoituong/aa.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_laptrinhhuongdoituong/aa.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 1
 }]]></component>
-  <component name="ProjectId" id="2VwAS6uAECe5GdIMwF4DxOtuMuY" />
+  <component name="ProjectId" id="2VxeuTaFSzzbuQeO90dYG0H4sic" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -40,12 +53,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9c784472-93fb-433c-935b-38e7b5db9438" name="Changes" comment="" />
-      <created>1695736765485</created>
+      <changelist id="c3845c28-defd-42e8-a58b-ec04ccf21e9e" name="Changes" comment="" />
+      <created>1695782380926</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1695736765485</updated>
-      <workItem from="1695736766532" duration="6971000" />
+      <updated>1695782380926</updated>
+      <workItem from="1695782381984" duration="11891000" />
     </task>
     <servers />
   </component>

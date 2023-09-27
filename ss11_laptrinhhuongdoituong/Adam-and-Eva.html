@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(mass) {
+            this.mass = mass;
+        }
+
+        getMass() {
+            return this.mass;
+        }
+
+        checkEmpty() {
+            if (this.mass <= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        decreaseApple() {
+            if (this.checkEmpty()) {
+                alert("Táo đã ăn hết rồi");
+            } else {
+                this.mass--;
+            }
+        }
+    }
+
+    class People {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getGender() {
+            return this.gender;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        say(string) {
+            alert(string);
+        }
+
+        checkApple(apple) {
+            apple.checkEmpty();
+        }
+
+        eat(apple) {
+            if (apple.getMass() > 0) {
+                apple.decreaseApple();
+                this.weight++
+            } else {
+                alert("Táo đã ăn hết rồi");
+            }
+        }
+    }
+
+    let apple_1 = new Apple(10);
+    let eva = new People("eva", "Male", 50);
+    let adam = new People("Adam", "Male", 60);
+    while (!apple_1.checkEmpty()) {
+        document.write("Adam ăn!" + "<br>");
+        adam.eat(apple_1);
+        document.write("Cân nặng của Adam là: " + adam.getWeight() + "đv" + "<br>");
+        document.write("Quả táo còn: " + apple_1.getMass() + "đv" + "<br>");
+        document.write("Eva ăn!" + "<br>");
+        eva.eat(apple_1);
+        document.write("Cân nặng của Eva là : " + eva.getWeight() + "đv" + "<br>");
+        document.write("Quả táo còn: " + apple_1.getMass() + "đv" + "<br><br>");
+    }
+</script>
+</body>
+</html>

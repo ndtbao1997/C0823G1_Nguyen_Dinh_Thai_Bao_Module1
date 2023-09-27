@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let employeeSalary = +prompt("Hãy nhập lương nhân viên vào!");
+    let incomeTax;
+    let actualMoney;
+    if (employeeSalary >= 15000000) {
+        incomeTax = employeeSalary * 20 / 100;
+        actualMoney = employeeSalary - incomeTax;
+        alert("Thuế thu nhập cá nhân là " + incomeTax + "Đ và số tiền thực nhận là " + actualMoney + "Đ");
+    } else if (employeeSalary >= 7000000) {
+        incomeTax = employeeSalary * 10 / 100;
+        actualMoney = employeeSalary - incomeTax;
+        alert("Thuế thu nhập cá nhân là " + incomeTax + "Đ và số tiền thực nhận là " + actualMoney + "Đ");
+    } else if (employeeSalary > 0) {
+        incomeTax = employeeSalary * 5 / 100;
+        actualMoney = employeeSalary - incomeTax;
+        alert("Thuế thu nhập cá nhân là " + incomeTax + "Đ và số tiền thực nhận là " + actualMoney + "Đ");
+    } else {
+        alert("Tiền lương bạn nhập vào không đúng");
+    }
+</script>
+</body>
+</html>
