@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numofElements = +prompt("Nhập số phần tử của mảng a!");
+    let a = new Array(numofElements);
+    for (let i = 0; i < a.length; i++) {
+        a[i] = parseInt(prompt(`Nhập phần tử ${i} của mảng a!`));
+    }
+    let b = new Array(numofElements);
+    b[0] = a[0];
+    for (let j = 1; j < b.length; j++) {
+        b[j] = b[j - 1] + a[j];
+    }
+    alert(b);
+</script>
+</body>
+</html>

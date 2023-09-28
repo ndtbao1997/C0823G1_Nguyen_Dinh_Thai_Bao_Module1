@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4df0641-2281-47c9-b17d-b26d8920dd3e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b0ebe4a1-4eb9-4729-833c-807272a2afb9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../CaseStudy1/YeuCau2-Bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy1/YeuCau3-Bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy1/YeuCau3-Bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy1/YeuCau3-Bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy1/YeuCau3-Bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy1/â" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudy1/YeuCau2-Bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudy1/YeuCau2-Bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ss8_cautrucvonglap2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +24,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
+  "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2VYNt0VWmpoiKrgnhDoXVig15hP" />
+  <component name="ProjectId" id="2W0wofEd72JFiYbSeBVW535BYWe" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,22 +37,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b4df0641-2281-47c9-b17d-b26d8920dd3e" name="Changes" comment="" />
-      <created>1695009264523</created>
+      <changelist id="b0ebe4a1-4eb9-4729-833c-807272a2afb9" name="Changes" comment="" />
+      <created>1695882981228</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1695009264523</updated>
-      <workItem from="1695009265532" duration="2627000" />
+      <updated>1695882981228</updated>
+      <workItem from="1695882982261" duration="21000" />
     </task>
     <servers />
   </component>

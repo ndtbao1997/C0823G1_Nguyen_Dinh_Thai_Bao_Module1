@@ -69,18 +69,18 @@
         }
     }
 
-    let apple_1 = new Apple(10);
+    let apple1 = new Apple(10);
     let eva = new People("eva", "Male", 50);
     let adam = new People("Adam", "Male", 60);
-    while (!apple_1.checkEmpty()) {
+    while (!apple1.checkEmpty()) {
         document.write("Adam ăn!" + "<br>");
-        adam.eat(apple_1);
+        adam.eat(apple1);
         document.write("Cân nặng của Adam là: " + adam.getWeight() + "đv" + "<br>");
-        document.write("Quả táo còn: " + apple_1.getMass() + "đv" + "<br>");
+        document.write("Quả táo còn: " + apple1.getMass() + "đv" + "<br>");
         document.write("Eva ăn!" + "<br>");
-        eva.eat(apple_1);
+        eva.eat(apple1);
         document.write("Cân nặng của Eva là : " + eva.getWeight() + "đv" + "<br>");
-        document.write("Quả táo còn: " + apple_1.getMass() + "đv" + "<br><br>");
+        document.write("Quả táo còn: " + apple1.getMass() + "đv" + "<br><br>");
     }
 </script>
 </body>

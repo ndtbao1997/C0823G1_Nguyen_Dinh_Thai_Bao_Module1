@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="result"></div>
+<div id="result1"></div>
+<script>
+    let foodList = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa"];
+    let price = [10000, 12000, 15000, 16000, 8000, 20000];
+    do {
+        let setto = parseInt(prompt(`Hãy chọn đồ dùng mà bạn muốn: 1(${foodList[0]}), 2(${foodList[1]}), 3(${foodList[2]}), 4(${foodList[3]}), 5(${foodList[4]}), 6(${foodList[5]}), 7(Thoát gọi món)`));
+        let total;
+        if (setto > 0 && setto < 7) {
+            let quantity = parseInt(prompt(`Giá của đồ dùng này là ${price[setto - 1]} . Hãy nhập số lượng mà bạn muốn!`));
+            if (setto === 1 && quantity > 0) {
+                total = price[setto - 1] * quantity;
+                alert("Thành tiền: " + total + "Đ");
+            }
+            if (setto === 2 && quantity > 0) {
+                total = price[setto - 1] * quantity;
+                alert("Thành tiền: " + total + "Đ");
+            }
+            if (setto === 3 && quantity > 0) {
+                total = price[setto - 1] * quantity;
+                alert("Thành tiền: " + total + "Đ");
+            }
+            if (setto === 4 && quantity > 0) {
+                total = price[setto - 1] * quantity;
+                alert("Thành tiền: " + total + "Đ");
+            }
+            if (setto === 5 && quantity > 0) {
+                total = price[setto - 1] * quantity;
+                alert("Thành tiền: " + total + "Đ");
+            }
+            if (setto === 6 && quantity > 0) {
+                total = price[setto - 1] * quantity;
+                alert("Thành tiền: " + total + "Đ");
+            }
+        }
+        if (setto === 7) {
+            alert("Bạn đã thoát khỏi chương trình")
+        }
+    }
+    while (setto !== 7)
+</script>
+</body>
+</html>
