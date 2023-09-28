@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = "tRuong    TaN   HAI";
+    let arrStr = str.split("");
+    spaceDelete();
+    settoLowerUpper();
+    capitalizeTheFirstLetter();
+    longgestWord();
+    console.log(arrStr)
+
+    function spaceDelete() {
+        for (let i = 0; i < arrStr.length; i++) {
+            let a = arrStr.indexOf(" ", i)
+            if (arrStr[a] === arrStr[a + 1]) {
+                arrStr.splice(a + 1, 1)
+            }
+        }
+    }
+
+    function settoLowerUpper() {
+        let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        for (let j = 0; j < arrStr.length; j++) {
+            if (upper.indexOf(arrStr[j]) !== -1) {
+                arrStr[j] = arrStr[j].toLowerCase();
+            }
+        }
+    }
+
+    function capitalizeTheFirstLetter() {
+        for (let k = 0; k < arrStr.length; k++) {
+            if (k === 0 || arrStr[k - 1] === " ") {
+                arrStr[k] = arrStr[k].toUpperCase();
+            }
+        }
+    }
+
+    function longgestWord() {
+        arrStr = arrStr.join('').split(' ');
+        let max = arrStr[0].split('').length;
+        console.log(max);
+        let b = arrStr[0];
+        for (let l = 1; l < arrStr.length; l++) {
+            if (arrStr[l].split('').length > max) {
+                b = arrStr[i];
+            }
+        }
+        console.log(b)
+        document.write(b);
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    countPrimeNumbers()
+
+    function countPrimeNumbers() {
+        let m = +prompt("Hãy nhập số phần tử của mảng!");
+        let n = +prompt("Hãy nhập số phần tử của mảng con!");
+        let arr = new Array(m);
+        let newArr = [];
+        for (let i = 0; i < m; i++) {
+            arr[i] = new Array(n);
+            for (let j = 0; j < n; j++) {
+                arr[i][j] = parseInt(prompt("Hãy nhập phần tử [" + i + "][" + j + "]"));
+                if (arr[i][j] > 0) {
+                    let count = 0;
+                    for (let k = 1; k <= arr[i][j]; k++) {
+                        if (arr[i][j] % k === 0) {
+                            count++
+                        }
+                    }
+                    if (count === 2) {
+                        newArr.push(arr[i][j]);
+                    }
+                }
+            }
+        }
+        console.log(newArr);
+        let longs = newArr.length;
+        document.write("Có " + longs + " số nguyên tố trong mảng là: " + newArr);
+    }
+</script>
+</body>
+</html>

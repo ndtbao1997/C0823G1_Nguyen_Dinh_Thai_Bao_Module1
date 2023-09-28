@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkMaxMinOfArray() {
+        let m = +prompt("Hãy nhập số phần tử của mảng");
+        let n = +prompt("Hãy nhập số phần tử của mảng con");
+        let arr = new Array(m);
+        for (let i = 0; i < m; i++) {
+            arr[i] = new Array(n);
+            for (let j = 0; j < n; j++) {
+                arr[i][j] = +prompt("Hãy nhập phần tử ở vị trí [" + i + "][" + j + "]");
+            }
+        }
+        let max = arr[0][0];
+        let min = arr[0][0];
+        for (let k = 0; k < m; k++) {
+            for (let l = 0; l < n; l++) {
+                if (arr[k][l] > max) {
+                    max = arr[k][l];
+                }
+                if (arr[k][l] < min) {
+                    min = arr[k][l];
+                }
+            }
+        }
+        document.write("Max: " + max + "<br>" + "Min: " + min);
+    }
+
+    checkMaxMinOfArray();
+</script>
+</body>
+</html>
