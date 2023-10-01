@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Hãy nhập số phần tử của mảng"));
+    if (0 < n && n <= 50) {
+        let arr = new Array(n);
+        let newArr = [];
+        let total = 0;
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = +prompt(`Hãy nhập phần tử thứ ${i}`);
+            if (arr[i] % 5 === 0 && i % 3 === 0) {
+                newArr.push(arr[i]);
+            }
+        }
+        for (let j = 0; j < newArr.length; j++) {
+            total += newArr[j];
+        }
+        let avg = total / newArr.length;
+        document.write("Các phần tử của mảng là: " + arr + "<br>" + "kết quả trung bình của các phần tử chia hết cho 5 ở vị trí chia hết cho 3 là :" + avg);
+    } else {
+        alert("Số phần tử nhập vào phải lớn hơn 0 và nhỏ hơn hoặc bằng 50!\n" + "Xin mời bạn nhập lại!")
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Hãy nhập vào một cụm từ");
+    vietTat(str);
+
+    function vietTat(string) {
+        let arrStr = string.split(' ');
+        if (arrStr.length === 1) {
+            alert("cụm từ này chỉ có 1 từ nên không cần viết tắt");
+        } else {
+            let arrStr1 = string.split('');
+            let result = [];
+            for (let i = 0; i < arrStr1.length; i++) {
+                if (i === 0 || arrStr1[i - 1] === " ") {
+                    let a = arrStr1[i].toUpperCase();
+                    result.push(a);
+                }
+            }
+            document.write("Cụm từ bạn vừa nhập viết tắt là: " + result.join(''));
+        }
+    }
+</script>
+
+</body>
+</html>

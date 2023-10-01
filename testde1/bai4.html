@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="themMoi()">Thêm máy tính</button>
+<button onclick="sapXep()">Sắp xếp</button>
+<div id="result"></div>
+<script>
+    class MayTinh {
+        constructor(maMay, tenMay, tenHang, giaBan) {
+            this.maMay = maMay;
+            this.tenMay = tenMay;
+            this.tenHang = tenHang;
+            this.giaBan = giaBan;
+        }
+
+        getMaMay() {
+            return this.maMay;
+        }
+
+        setMaMay(maMay) {
+            this.maMay = maMay;
+        }
+
+        getTenMay() {
+            return this.tenMay;
+        }
+
+        setTenMay(tenMay) {
+            this.tenMay = tenMay;
+        }
+
+        getTenHang() {
+            return this.tenHang;
+        }
+
+        setTenHang(tenHang) {
+            this.tenHang = tenHang;
+        }
+
+        getGiaBan() {
+            return this.giaBan;
+        }
+
+        setGiaBan(giaBan) {
+            this.giaBan = giaBan;
+        }
+    }
+
+    let asus = new MayTinh("001", "Asus101", "ASUS", +10000);
+    let lenovo = new MayTinh("002", "Lenovo102", "LENOVO", +12000);
+    let arrMayTinh = [asus, lenovo];
+    taoDanhSach();
+
+    function taoDanhSach() {
+        let bangMayTinh = "<table border='1'><tr><th>Mã máy</th><th>Tên máy</th><th>Tên hãng</th><th>Giá bán</th></tr>";
+        for (let i = 0; i < arrMayTinh.length; i++) {
+            bangMayTinh += "<tr><td>" + arrMayTinh[i].getMaMay() + "</td>" +
+                "<td>" + arrMayTinh[i].getTenMay() + "</td>" +
+                "<td>" + arrMayTinh[i].getTenHang() + "</td>" +
+                "<td>" + arrMayTinh[i].getGiaBan() + "</td>";
+        }
+        bangMayTinh += "</table>";
+        document.getElementById("result").innerHTML = bangMayTinh;
+    }
+
+    function themMoi() {
+        computer = Object.create(arrMayTinh[0]);
+        computer.setMaMay(prompt("Hãy nhập mã máy"));
+        computer.setTenMay(prompt("Hãy nhập tên máy"));
+        computer.setTenHang(prompt("Hãy nhập tên hãng"));
+        computer.setGiaBan(prompt("Hãy nhập giá bán"));
+        arrMayTinh.push(computer);
+        taoDanhSach();
+    }
+
+    function sapXep() {
+        for (let l = 0; l < arrMayTinh.length; l++) {
+            for (let g = 1; g < arrMayTinh.length; g++) {
+                if (arrMayTinh[g - 1].getGiaBan() < arrMayTinh[g].getGiaBan()) {
+                    let temp = arrMayTinh[g - 1];
+                    arrMayTinh[g - 1] = arrMayTinh[g];
+                    arrMayTinh[g] = temp;
+                }
+            }
+        }
+        taoDanhSach();
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = [-1, 150, 190, 170, -1, -1, 160, 180];
+    let num1 = [];
+    for (let k = 0; k < num.length; k++) {
+        num1.push(num[k]);
+    }
+    aaaa()
+
+    function aaaa() {
+        num1.sort(function (a, b) {
+            return a - b;
+        })
+        console.log(num1)
+        console.log(num)
+        for (let i = 0; i < num1.length; i++) {
+            while (num1[i] === -1) {
+                num1.splice(i, 1);
+            }
+        }
+        console.log(num1);
+        let count = -1;
+        for (let j = 0; j < num.length; j++) {
+            if (num[j] !== -1) {
+                count++
+                num[j] = num1[count];
+            }
+        }
+        console.log(num);
+    }
+
+
+</script>
+</body>
+</html>

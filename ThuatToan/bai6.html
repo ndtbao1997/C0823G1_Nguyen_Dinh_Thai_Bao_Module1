@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = 'abdcef123dabdceffecdb1a';
+    let arr = input.split('');
+    for (let i = 0; i < arr.length; i++) {
+        while (arr.indexOf(arr[i], i + 1) !== -1) {
+            arr.splice(arr.indexOf(arr[i], i + 1), 1);
+        }
+    }
+    console.log(arr);
+    console.log(input);
+    let count = 0;
+    let arr1 = input.split('');
+    let result = [];
+    for (let k = 0; k < arr.length; k++) {
+        for (let l = 0; l < arr1.length; l++) {
+            if (arr1[l] === arr[k]) {
+                count++;
+            }
+        }
+        if (count > 1) {
+            result.push(arr[k])
+        }
+        count = 0;
+    }
+    console.log(result);
+</script>
+</body>
+</html>

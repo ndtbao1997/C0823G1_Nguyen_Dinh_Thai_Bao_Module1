@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s1 = "aabcc";
+    let s2 = "adcaa";
+
+    timKyTuChung()
+
+    function timKyTuChung() {
+        let newS1 = s1.split('');
+        let newS2 = s2.split('');
+        let newS = []
+        for (let i = 0; i < newS1.length; i++) {
+            if (newS2.indexOf(newS1[i]) !== -1) {
+                newS.push(newS1[i]);
+            }
+        }
+        for (let j = 0; j < newS.length; j++) {
+            while (newS.indexOf(newS[j], j + 1) !== -1) {
+                newS.splice(newS.indexOf(newS[j], j + 1), 1);
+            }
+        }
+        console.log(newS);
+        let result = [];
+        for (let k = 0; k < newS.length; k++) {
+            while ((newS1.indexOf(newS[k]) !== -1) && (newS2.indexOf(newS[k]) !== -1)) {
+                result.push(newS[k])
+                newS1.splice(newS1.indexOf(newS[k]), 1);
+                newS2.splice(newS2.indexOf(newS[k]), 1);
+            }
+        }
+        console.log(result)
+    }
+
+</script>
+</body>
+</html>

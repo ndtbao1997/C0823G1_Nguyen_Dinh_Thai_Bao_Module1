@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkFibonacci(arr) {
+        let fibonacci = [];
+        let num1 = 0;
+        let num2 = 1;
+        let temp;
+        for (let i = 1; i < 100; i++) {
+            fibonacci.push(num1);
+            temp = num1 + num2;
+            num2 = num1;
+            num1 = temp
+        }
+        console.log(fibonacci)
+        let newArr = [];
+        for (let j = 0; j < arr.length; j++) {
+            if (fibonacci.indexOf(arr[j]) !== -1) {
+                newArr.push(arr[j]);
+            }
+        }
+        newArr.sort(function (a, b) {
+            return a - b
+        })
+        document.write("Mảng fibonacci là: " + newArr);
+    }
+
+    let n = parseInt(prompt("Hãy nhập số phần tử của mảng!"));
+    if (n > 0) {
+        let numArr = new Array(n);
+        for (let k = 0; k < n; k++) {
+            numArr[k] = +prompt(`Hãy nhập phần tử ở vị trí ${k}`);
+        }
+        checkFibonacci(numArr);
+    } else {
+        alert("Số phần tử bạn nhập vào phải lớn hơn 0! Xin mời bạn nhập lại");
+    }
+
+
+</script>
+</body>
+</html>

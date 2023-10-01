@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 2, 1, 1, 2, 1];
+    let newArr = [];
+    for (let a = 0; a < arr.length; a++) {
+        newArr.push(arr[a]);
+    }
+    xoa(newArr);
+    let dem = []
+    let count = 0;
+    for (let k = 0; k < newArr.length; k++) {
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] === newArr[k]) {
+                count++;
+            }
+        }
+        dem.push(count);
+        count = 0;
+    }
+    console.log(dem)
+    xoa(dem);
+    if (dem.length === 1) {
+        document.write("true");
+    } else {
+        document.write("false")
+    }
+
+    function xoa(array) {
+        for (let i = 1; i < array.length; i++) {
+            while (array.indexOf(array[i - 1], i) !== -1) {
+                array.splice(array.indexOf(array[i - 1]), 1);
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
