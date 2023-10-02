@@ -5,10 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<div><button onclick="addStudent()">Thêm mới học viên</button> <button onclick="editStudent()">Sửa thông tin học viên</button> <button onclick="deleteStudent()">Xóa học viên</button></div><br>
+<div>
+    <button onclick="addStudent()">Thêm mới học viên</button>
+    <button onclick="editStudent()">Sửa thông tin học viên</button>
+    <button onclick="deleteStudent()">Xóa học viên</button>
+</div>
+<br>
 <div id="result"></div>
 <script>
-    class StudentList {
+    class Student {
         constructor(studentCode, name, className, email, dateOfBirth, module) {
             this.studentCode = studentCode;
             this.name = name;
@@ -37,104 +42,115 @@
         getClassName() {
             return this.className;
         }
-        setClassName(className){
+
+        setClassName(className) {
             this.className = className;
         }
-        getEmail(){
+
+        getEmail() {
             return this.email;
         }
-        setEmail(email){
+
+        setEmail(email) {
             this.email = email;
         }
-        getDateOfBirth(){
+
+        getDateOfBirth() {
             return this.dateOfBirth;
         }
-        setDateOfBirth(dateOfBirth){
+
+        setDateOfBirth(dateOfBirth) {
             this.dateOfBirth = dateOfBirth;
         }
-        getModule(){
+
+        getModule() {
             return this.module;
         }
-        setModule(module){
+
+        setModule(module) {
             this.module = module;
         }
     }
-    let nguyenVanA = new StudentList('HV-0001', 'Nguyễn Văn A', 'C0823G1', 'aaaaa@gmail.com', '29/08/1997', 'Module 1');
-    let nguyenVanB = new StudentList('HV-0002', 'Nguyễn Văn B', 'C0823G1', 'bbbbb@gmail.com', '12/12/2002', 'Module 1');
+
+    let nguyenVanA = new Student('HV-0001', 'Nguyễn Văn A', 'C0823G1', 'aaaaa@gmail.com', '29/08/1997', 'Module 1');
+    let nguyenVanB = new Student('HV-0002', 'Nguyễn Văn B', 'C0823G1', 'bbbbb@gmail.com', '12/12/2002', 'Module 1');
     console.log(nguyenVanA.getStudentCode())
     let studentslist = [nguyenVanA, nguyenVanB];
     createStudentTable()
-    function createStudentTable(){
+
+    function createStudentTable() {
         let studentsTable = "<table border='1' cellspacing='0' style='text-align: center'><tr><th>Mã học viên</th><th>Tên</th><th>Lớp</th><th>Email</th><th>Ngày sinh</th><th>Module</th></tr>";
-        for (let i = 0; i < studentslist.length; i++){
-            studentsTable += "<tr><td width='150px'>" + studentslist[i].getStudentCode() + "</td>" +
-                "<td width='200px'>" + studentslist[i].getName() + "</td>" +
-                "<td width='100px'>" + studentslist[i].getClassName() + "</td>" +
-                "<td width='250px'>" + studentslist[i].getEmail() + "</td>" +
-                "<td width='150px'>" + studentslist[i].getDateOfBirth() + "</td>" +
-                "<td width='150px'>" + studentslist[i].getModule() + "</td>" + "</tr>";
+        for (let i = 0; i < studentslist.length; i++) {
+            studentsTable += "<tr><td style='width: 150px'>" + studentslist[i].getStudentCode() + "</td>" +
+                "<td style='width: 200px'>" + studentslist[i].getName() + "</td>" +
+                "<td style='width: 100px'>" + studentslist[i].getClassName() + "</td>" +
+                "<td style='width: 250px'>" + studentslist[i].getEmail() + "</td>" +
+                "<td style='width: 150px'>" + studentslist[i].getDateOfBirth() + "</td>" +
+                "<td style='width: 150px'>" + studentslist[i].getModule() + "</td>" + "</tr>";
         }
         studentsTable += "</table>";
-        document.getElementById("result").innerHTML = studentsTable;}
+        document.getElementById("result").innerHTML = studentsTable;
+    }
 
 
-    function addStudent(){
-        let newStudent = Object.create(studentslist[0]);
-        newCode = prompt("Hãy nhập mã học viên", "HV-XXXX");
-        newName = prompt("Hãy nhập tên học viên", "Nguyễn Văn XXX");
-        newClassName = prompt("Hãy nhập lớp học viên", "C0823G1");
-        newEmail = prompt("Hãy nhập Email của học viên vào", "xxxxxx@gmail.com");
-        newDateOfBirth = prompt("Hãy nhập ngày tháng năm sinh vào", "01/01/2001");
-        newModule = prompt("Hãy nhập Module vào", "Module 1-6");
+    function addStudent() {
+        let newStudent = new Student();
+        let reg = /^\w+@[a-zA-Z]{3,}\.com$/i;
+        let reg1 = /^HV[-]\d{4}$/i;
+        let reg2 = /^\d{2}[/]\d{2}[/]\d{4}$/i;
+        let reg3 = /^Module[ ][1-6]$/i;
+        do {
+            newCode = prompt("Hãy nhập mã học viên. Ví dụ: HV-XXXX");
+        } while (reg1.test(newCode) !== true)
+        do {
+            newName = prompt("Hãy nhập tên học viên. Ví dụ: Nguyễn Văn XXX");
+        } while (newName.split('').length > 50)
+        newClassName = prompt("Hãy nhập lớp học viên. Ví dụ: C0823G1");
+        do {
+            newEmail = prompt("Hãy nhập Email của học viên vào. Ví dụ: xxxxxx@gmail.com");
+        } while (reg.test(newEmail) !== true)
+        do {
+            newDateOfBirth = prompt("Hãy nhập ngày tháng năm sinh vào. Ví dụ: 01/01/2001");
+        } while (reg2.test(newDateOfBirth) !== true)
+        do {
+            newModule = prompt("Hãy nhập Module vào. Ví dụ: Module 1-6");
+        } while (reg3.test(newModule) !== true)
         newStudent.setStudentCode(newCode);
         newStudent.setName(newName);
         newStudent.setClassName(newClassName);
         newStudent.setEmail(newEmail);
         newStudent.setDateOfBirth(newDateOfBirth)
         newStudent.setModule(newModule);
-        checkNewStudent(newStudent)
+        studentslist.push(newStudent);
         createStudentTable();
     }
-    function deleteStudent(){
+
+    function deleteStudent() {
         let deleteCode = prompt("Hãy nhập vào mã học viên cần xóa");
         let count = 0;
-        for (let k = 0; k < studentslist.length; k++){
-            if (studentslist[k].getStudentCode() === deleteCode){
+        for (let k = 0; k < studentslist.length; k++) {
+            if (studentslist[k].getStudentCode() === deleteCode) {
                 let check = confirm("Bạn có chắc là muốn xóa học viên này không");
-                if (check){
-                    studentslist.splice(k,1);
+                if (check) {
+                    studentslist.splice(k, 1);
                 } else {
                     alert("Hủy");
                 }
                 count++;
             }
         }
-        if (count === 0){
+        if (count === 0) {
             alert("Mã học viên này không tồn tại");
         }
         createStudentTable();
     }
-    function checkNewStudent(newstudent){
-        let reg = /^\w+@[a-zA-Z]{3,}\.com$/i;
-        let reg1 = /^HV[-]\d{4}$/i;
-        let reg2 = /^\d{2}[/]\d{2}[/]\d{4}$/i;
-        let reg3 = /^Module[ ][1-6]$/i;
-        let a = reg.test(newstudent.getEmail());
-        let b = reg1.test(newstudent.getStudentCode());
-        let c = reg2.test(newstudent.getDateOfBirth());
-        let d = reg3.test(newstudent.getModule());
-        if (a && b && c && d && (newstudent.getName().split('').length <= 50)){
-            studentslist.push(newstudent);
-        } else {
-            alert("Thông tin bạn nhập không chính xác! Xin hãy nhập lại");
-        }
-    }
 
-    function editStudent(){
+
+    function editStudent() {
         let editCode = prompt("Hãy nhập mã học viên cần sửa");
         let count = 0;
-        for (let l=0; l < studentslist.length; l++){
-            if (studentslist[l].getStudentCode() === editCode){
+        for (let l = 0; l < studentslist.length; l++) {
+            if (studentslist[l].getStudentCode() === editCode) {
                 editCodes = prompt("Hãy sửa mã học viên", studentslist[l].getStudentCode());
                 editName = prompt("Hãy sửa tên học viên", studentslist[l].getName());
                 editClassName = prompt("Hãy sửa lớp học viên", studentslist[l].getClassName());
@@ -150,7 +166,7 @@
                 count++;
             }
         }
-        if (count === 0){
+        if (count === 0) {
             alert("mã học viên này không tồn tại");
         }
         createStudentTable();
