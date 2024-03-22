@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = parseInt(prompt("Hãy nhập số lượng các nhóm"));
+    let arr = new Array(m);
+    let reg = /^[1-4]$/i;
+    let count = 0;
+    for (let i = 0; i < m; i++) {
+        do {
+            arr[i] = +prompt(`Hãy nhập số lượng thành viên của nhóm ${i + 1}! Mỗi nhóm có ít nhất 1 người và nhiều nhất 4 người!`)
+        } while (reg.test(arr[i]) !== true)
+    }
+    arr.sort(function (a, b) {
+        return b - a;
+    })
+    console.log(arr)
+    for (let k = 0; k < arr.length; k++) {
+        if (arr[k] === 4) {
+            count++;
+            arr.splice(k, 1);
+        } else {
+            for (let j = k + 1; j < arr.length - k; j++) {
+                if (arr[k] + arr[j] === 4) {
+                    count++
+                    arr.splice(j, 1);
+                    arr.splice(k, 1);
+                }
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

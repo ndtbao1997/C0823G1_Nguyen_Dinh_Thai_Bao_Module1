@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numArr = [8, 3, 6, 1, 5, 4];
+    let newNumArr = [];
+    for (let i = 0; i < numArr.length; i++) {
+        newNumArr.push(numArr[i]);
+    }
+    newNumArr.sort(function (a, b) {
+        return b - a;
+    })
+    console.log(newNumArr);
+    let max = newNumArr[0];
+    let max2;
+    for (let j = 1; j < newNumArr.length; j++) {
+        if (newNumArr[j] < max) {
+            max2 = newNumArr[j];
+            break;
+        }
+    }
+    console.log(max2);
+    document.write("Số có vị trí lớn thứ nhì nằm ở vị trí thứ " + numArr.indexOf(max2));
+</script>
+</body>
+</html>

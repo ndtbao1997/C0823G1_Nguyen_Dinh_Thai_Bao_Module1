@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numArr = [6, 1, 3, 8, 11];
+    numArr.sort(function (a, b) {
+        return a - b;
+    })
+    let i = numArr[0];
+    let n = numArr[numArr.length - 1];
+    console.log(i)
+    console.log(n)
+    let newNumArr = [];
+    for (i; i <= n; i++) {
+        if (numArr.indexOf(i) === -1) {
+            newNumArr.push(i);
+        }
+    }
+    console.log(newNumArr);
+</script>
+
+</body>
+</html>

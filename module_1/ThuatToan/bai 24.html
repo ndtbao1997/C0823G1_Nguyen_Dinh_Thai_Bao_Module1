@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Hãy nhập số phần tử của mảng"));
+    let numArr = new Array(n);
+    for (let i = 0; i < n; i++) {
+        do {
+            numArr[i] = parseInt(prompt(`Hãy nhập giá trị của phần tử ${i}`));
+        } while (numArr[i] > 60000000)
+    }
+    let result = checkNumArray(numArr);
+    document.write(result);
+
+    function checkNumArray(array) {
+        let check;
+        let newNumArr = [];
+        for (let k = 0; k < array.length; k++) {
+            check = String(array[k]).split('')
+            switch (check[0]) {
+                case '1':
+                case '3':
+                case '5':
+                case '7':
+                case '9':
+                    newNumArr.push(array[k]);
+                    break;
+            }
+        }
+        return newNumArr;
+    }
+</script>
+</body>
+</html>

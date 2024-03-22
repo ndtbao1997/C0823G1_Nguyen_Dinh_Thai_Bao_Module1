@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Hãy nhập số phần tử của mảng"));
+    let arr = new Array(n);
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt(`Hãy nhập giá trị của phần tử ${i}`);
+    }
+    checkArr();
+
+    function checkArr() {
+        let result = true;
+        let a = arr[1] - arr[0];
+        if (n > 3) {
+            for (let j = 2; j < n; j++) {
+                if (arr[j] !== arr[j - 1] + a) {
+                    result = false;
+                    break;
+                }
+            }
+            if (result === true) {
+                alert("Mảng vừa nhập vào được sắp xếp theo thứ tự tăng dần");
+            } else {
+                alert("Mảng vừa nhập vào không được sắp xếp theo thứ tự tăng dần");
+            }
+        } else {
+            alert("Số phần tử nhập vào ít hơn 3");
+        }
+    }
+</script>
+</body>
+</html>

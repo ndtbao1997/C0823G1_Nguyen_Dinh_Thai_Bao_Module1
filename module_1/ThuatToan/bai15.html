@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s1 = prompt("Hãy nhập vào từ bạn muốn kiểm tra");
+    let s2 = prompt("Hãy nhập vào phương thức bạn muốn kiểm tra");
+    let upper = "QWERTYUIOPLKJHGFDSAZXCVBNM";
+    let newS2 = s2.split('');
+    let newS3 = [];
+    for (let i = 0; i < newS2.length; i++) {
+        if (upper.indexOf(newS2[i]) !== -1) {
+            newS3.push(newS2[i].toLowerCase());
+        } else {
+            newS3.push(newS2[i])
+        }
+    }
+    let newS4 = newS3.join('');
+    switch (newS4) {
+        case "class":
+            a = checkNamingClass(s1);
+            alert(a);
+            break;
+        case "package":
+            b = checkPackage(s1);
+            alert(b);
+            break;
+        case "field":
+        case "method":
+            c = checkFieldAndMethod(s1);
+            alert(c);
+            break;
+        default:
+            alert("Phương thức bạn nhập vào không đúng");
+    }
+
+
+    function checkNamingClass(str) {
+        let newStr = str.split('');
+        return upper.indexOf(newStr[0]) !== -1;
+
+    }
+
+    function checkPackage(str) {
+        let newStr1 = str.split('');
+        for (let k = 0; k < newStr1.length; k++) {
+            if (upper.indexOf(newStr1[k]) !== -1) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function checkFieldAndMethod(str) {
+        let newS2 = str.split('');
+        let count = 0;
+        for (let l = 1; l < newS2.length; l++) {
+            if (upper.indexOf(newS2[l]) !== -1) {
+                count++;
+            }
+        }
+        return upper.indexOf(newS2[0]) === -1 && count >= 1;
+
+    }
+</script>
+</body>
+</html>

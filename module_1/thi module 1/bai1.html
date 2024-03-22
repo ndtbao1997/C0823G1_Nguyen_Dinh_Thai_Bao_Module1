@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n;
+    do {
+        n = parseInt(prompt("Hãy nhập một số nguyên dương bé hơn hoặc bằng 500"));
+    } while (n > 500)
+    let uocSoCuaN = [];
+    for (let i = 1; i <= n; i++) {
+        if (n % i === 0) {
+            uocSoCuaN.push(i);
+        }
+    }
+    let tongUocSoN = 0;
+    if (uocSoCuaN.length === 0) {
+        alert(`Số ${n} bạn vừa nhập không có ước số!`);
+    } else {
+        for (let j = 0; j < uocSoCuaN.length; j++) {
+            tongUocSoN += uocSoCuaN[j];
+        }
+        alert(`Số ${n} bạn vừa nhập có ước số là ` + uocSoCuaN + ` và tổng của chúng là ` + tongUocSoN);
+    }
+</script>
+</body>
+</html>

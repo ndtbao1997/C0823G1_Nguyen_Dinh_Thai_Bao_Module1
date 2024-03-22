@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let result;
+    let x;
+    let y;
+    let s;
+    do {
+        x = parseInt(prompt("Hãy nhập số cây bút mà nếu mua thì đủ sẽ được giảm giá"));
+    } while (x < 1)
+    do {
+        y = parseInt(prompt(`Nhập số lượng bút sẽ được khuyến mãi khi mua ${x} cây bút`));
+    } while (y < 1)
+    do {
+        s = parseInt(prompt("Nhập số lượng cây bút mà thầy Ba phải mang về"));
+    } while (s < 1)
+    if (s < x) {
+        result = s;
+        alert("Số lượng bút thầy Ba cần mua là: " + result);
+    } else {
+        result = x * (Math.floor(s / (x + y))) + (s - Math.floor(s / (x + y)) * (x + y));
+        document.write("Số lượng cây bút bạn cần mua là: " + result);
+    }
+    console.log(result);
+</script>
+
+</body>
+</html>

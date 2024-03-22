@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Hãy nhập vào độ dài của mảng"));
+    let arr = new Array(n);
+    let total = 0;
+    let newArr = [];
+    for (let i = 0; i < n; i++){
+        arr[i] = +prompt(`Hãy nhập vào giá trị ở vị trí ${i}`);
+        total += arr[i];
+        newArr.push(total);
+    }
+    alert("Mảng mới có được là " + newArr)
+
+</script>
+</body>
+</html>

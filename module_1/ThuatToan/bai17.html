@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 = prompt("Hãy nhập vào sâu kí tự thứ nhất");
+    let str2 = prompt("Hãy nhập vào sâu kí tự thứ hai");
+    let result = checkString(str1, str2);
+    alert(result);
+
+    function checkString(string1, string2) {
+        let newStr1 = string1.split('');
+        let newStr2 = string2.split('');
+        let a;
+        console.log(newStr1);
+        console.log(newStr2);
+        console.log(newStr2.indexOf(newStr1[0]))
+        for (let i = 0; i < newStr1.length; i++) {
+            while (newStr2.indexOf(newStr1[i]) !== -1) {
+                a = newStr2.indexOf(newStr1[i]);
+                newStr1.splice(i, 1);
+                newStr2.splice(a, 1);
+            }
+        }
+        return newStr1.length === 0 && newStr2.length === 0;
+    }
+</script>
+</body>
+</html>

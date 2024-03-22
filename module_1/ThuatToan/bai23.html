@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2];
+    checkCapSoCong(arr)
+
+    function checkCapSoCong(array) {
+        if (array.length < 3) {
+            alert("Mảng vừa nhập không phải là sai khác nhau một cấp số cộng!");
+        } else {
+            let hangSo = array[1] - array[0];
+            let result = true;
+            for (let i = 2; i < array.length; i++) {
+                if (array[i] !== array[i - 1] + hangSo) {
+                    result = false;
+                    break;
+                }
+            }
+            if (result) {
+                alert("Mảng vừa nhập là sai khác nhau một cấp số cộng");
+            } else {
+                alert("Mảng vừa nhập không phải là sai khác nhau một cấp số cộng!");
+            }
+        }
+    }
+</script>
+</body>
+</html>

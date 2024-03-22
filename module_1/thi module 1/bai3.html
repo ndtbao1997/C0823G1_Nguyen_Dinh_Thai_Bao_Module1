@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [42, 26, 43, 34, 43, 34, 35];
+    let result = checkArray(arr);
+    if (result.length > 0) {
+        alert("Số bắt đầu bằng số lẽ đầu tiên trong mảng là " + result[0]);
+    } else {
+        alert("Mảng không có số bắt đầu bằng số lẽ");
+    }
+
+    function checkArray(array) {
+        let numToStr;
+        let newNumArr = [];
+        for (let i = 0; i < array.length; i++) {
+            numToStr = String(array[i]);
+            switch (numToStr[0]) {
+                case '1':
+                case '3':
+                case '5':
+                case '7':
+                case '9':
+                    newNumArr.push(array[i]);
+                    break;
+            }
+        }
+        return newNumArr;
+    }
+</script>
+</body>
+</html>

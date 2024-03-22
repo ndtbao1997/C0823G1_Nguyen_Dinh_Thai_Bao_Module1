@@ -4,23 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af1fbc19-d609-4d54-b6ab-2d31ba9e0c6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CaseStudy1/HeThongQuanLyCodegymm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudy1/mmm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThuatToan/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThuatToan/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThuatToan/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThuatToan/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThuatToan/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThuatToan/bai6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThuatToan/bai7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThuatToan/bai8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testde1/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testde1/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testde1/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testde1/bai4.html" afterDir="false" />
+    <list default="true" id="329e4b08-7725-4a06-9824-ebcad06a54a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai 24.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai14.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai17.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai19.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai22.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai23.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ThuatToan/bai25.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sheet4/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sheet4/bai2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudy1/YeuCau3-Bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudy1/YeuCau3-Bai4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiaiThuat/bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/GiaiThuat/bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GiaiThuat/bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/GiaiThuat/bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThuatToan/bai10.html" beforeDir="false" afterPath="$PROJECT_DIR$/ThuatToan/bai10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThuatToan/bai11.html" beforeDir="false" afterPath="$PROJECT_DIR$/ThuatToan/bai11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThuatToan/bai12.html" beforeDir="false" afterPath="$PROJECT_DIR$/ThuatToan/bai12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThuatToan/bai9.html" beforeDir="false" afterPath="$PROJECT_DIR$/ThuatToan/bai9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sheet6/bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/sheet6/bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sheet6/bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/sheet6/bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sheet6/bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/sheet6/bai3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +50,7 @@
   "customColor": "",
   "associatedIndex": 6
 }]]></component>
-  <component name="ProjectId" id="2W9Ee7wvzrE9cmT3youbyOeMuvM" />
+  <component name="ProjectId" id="2WHUpVyR7TtgghSn6GLHN4h7crd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,15 +69,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\C0823G1_Nguyen_Dinh_Thai_Bao_Module1\sheet4" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="af1fbc19-d609-4d54-b6ab-2d31ba9e0c6f" name="Changes" comment="" />
-      <created>1696136487870</created>
+      <changelist id="329e4b08-7725-4a06-9824-ebcad06a54a2" name="Changes" comment="" />
+      <created>1696389181234</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1696136487870</updated>
-      <workItem from="1696136488909" duration="8890000" />
+      <updated>1696389181234</updated>
+      <workItem from="1696389182240" duration="10326000" />
     </task>
     <servers />
   </component>

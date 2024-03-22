@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numStart = parseInt(prompt("Hãy nhập khoảng bắt đầu"));
+    let numEnd = parseInt(prompt("Hãy nhập khoảng kết thúc"));
+    let i = numStart;
+    let a = numStart;
+    let result = [];
+    let check;
+    console.log(String(101).split(''))
+    check = String(101).split('');
+    console.log(check);
+    console.log(Number(check.join('')))
+
+    while (i <= numEnd) {
+        if (a >= 10) {
+            check = String(a).split('');
+            if (check[0] === check[check.length - 1]) {
+                Number(check.join(''));
+                result.push(i)
+            } else {
+                Number(check.join(''));
+            }
+        } else {
+            result.push(i);
+        }
+        console.log(Number(check.join('')))
+        console.log(a)
+        a++;
+        i++;
+    }
+    console.log(result);
+
+</script>
+
+</body>
+</html>

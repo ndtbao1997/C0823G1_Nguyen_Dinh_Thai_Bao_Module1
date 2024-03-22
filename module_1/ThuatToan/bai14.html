@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s = prompt("Hãy nhập vào một chuỗi kí tự bất kì");
+    let arrS = s.split('');
+    for (let i = 0; i < arrS.length; i++) {
+        while (arrS.indexOf(arrS[i], i + 1) !== -1) {
+            arrS.splice(arrS.indexOf(arrS[i], i + 1), 1);
+        }
+    }
+    document.write("Số phần tử khác nhau trong mảng là " + arrS);
+</script>
+</body>
+</html>

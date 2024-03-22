@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Hãy nhập số phần tử của mảng!"));
+    let numArr = new Array(n);
+    for (let i = 0; i < n; i++) {
+        numArr[i] = +prompt(`Hãy nhập giá trị thứ ${i}`);
+    }
+    let a = +prompt("Hãy nhập vào một giá trị bất kì");
+    let result = checkNumArr(numArr, a);
+    alert(`Số có khoảng cách lớn nhất đến ${a} là ` + result);
+    console.log(Math.abs(2 - 99))
+
+    function checkNumArr(array, x) {
+        let max = Math.abs(array[0] - x);
+        let newNum = array[0];
+        for (let k = 0; k < array.length; k++) {
+            if (Math.abs(array[k] - x) > max) {
+                max = Math.abs(array[k] - x);
+                newNum = array[k];
+            }
+        }
+        return newNum;
+    }
+</script>
+</body>
+</html>

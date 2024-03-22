@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Hãy nhập chiều dài cạnh thứ nhất của tam giác");
+    let b = +prompt("Hãy nhập chiều dài cạnh thứ hai của tam giác");
+    let c = +prompt("Hãy nhập chiều dài cạnh thứ ba của tam giác");
+    let result = false;
+    checkTamgiac();
+
+    function checkTamgiac() {
+        if (a > 0 && b > 0 && c > 0) {
+            if (a + b > c && b + c > a && a + c > b) {
+                result = true;
+                document.write("a,b,c là ba cạnh của tam giác" + "<br>");
+            } else {
+                document.write("a,b,c là không phải là  ba cạnh của tam giác");
+            }
+        } else {
+            document.write("a,b,c không phải là ba cạnh của tam giác");
+        }
+        if (result) {
+            if ((a * a === b * b + c * c) || (b * b === a * a + c * c) || (c * c === a * a + b * b)) {
+                document.write("a,b,c cũng là ba cạnh của tam giác vuông");
+            } else {
+                document.write("Nhưng không phải là ba cạnh của tam giác vuông");
+            }
+        }
+    }
+</script>
+</body>
+
+</html>

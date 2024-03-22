@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt("Hãy nhập một số bất kì vào");
+    if (999 > n || n > 10000 || n % 1 !== 0) {
+        document.write("-1");
+    } else {
+        let arr = n.split('');
+        let c = arr.length;
+        console.log(arr)
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < arr[i + 1]) {
+                arr.splice(i, 1);
+                arr.join('');
+                break;
+            }
+        }
+        if (arr.length === c) {
+            arr.pop();
+        }
+        document.write(arr.join(''));
+    }
+</script>
+
+</body>
+</html>

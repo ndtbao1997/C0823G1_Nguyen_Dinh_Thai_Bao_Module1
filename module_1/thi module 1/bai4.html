@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="result"></div>
+<br>
+<button onclick="xoaChuyenBay()">Xóa chuyến bay</button>
+<script>
+    class ChuyenBay {
+        constructor(maChuyenBay, ngayBay, gioBay, noiDi, noiDen) {
+            this.maChuyenBay = maChuyenBay;
+            this.ngayBay = ngayBay;
+            this.gioBay = gioBay;
+            this.noiDi = noiDi;
+            this.noiDen = noiDen;
+        }
+
+        getMaChuyenBay() {
+            return this.maChuyenBay;
+        }
+
+        setMaChuyenBay(maChuyenBay) {
+            this.maChuyenBay = maChuyenBay;
+        }
+
+        getNgayBay() {
+            return this.ngayBay;
+        }
+
+        setNgayBay(ngayBay) {
+            this.ngayBay = ngayBay;
+        }
+
+        getGioBay() {
+            return this.gioBay;
+        }
+
+        setGioBay(gioBay) {
+            this.gioBay = gioBay;
+        }
+
+        getNoiDi() {
+            return this.noiDi;
+        }
+
+        setNoiDi(noiDi) {
+            this.noiDi = noiDi;
+        }
+
+        getNoiDen() {
+            return this.noiDen;
+        }
+
+        setNoiDen(noiDen) {
+            this.noiDen = noiDen;
+        }
+    }
+
+    let japan001 = new ChuyenBay("JP001", "05/10/2023", "12h30", "Tokyo", "Hà Nội");
+    let japan002 = new ChuyenBay("JP002", "05/10/2023", "15h30", "Tokyo", "Ma Cau");
+    let listChuyenBay = [japan001, japan002];
+    hienThiDanhSachChuyenBay();
+
+    function hienThiDanhSachChuyenBay() {
+        let danhSach = `<table border="1" cellspacing="0">
+        <tr>
+            <th>Mã chuyến bay</th>
+            <th>Ngày bay</th>
+            <th>Giờ bay</th>
+            <th>Nơi đi</th>
+            <th>Nơi đến</th>
+        </tr>`;
+        for (let i = 0; i < listChuyenBay.length; i++) {
+            danhSach += `<tr>
+            <td style="width: 150px; text-align: center">${listChuyenBay[i].getMaChuyenBay()}</td>
+            <td style="width: 100px; text-align: center">${listChuyenBay[i].getNgayBay()}</td>
+            <td style="width: 100px; text-align: center">${listChuyenBay[i].getGioBay()}</td>
+            <td style="width: 100px; text-align: center">${listChuyenBay[i].getNoiDi()}</td>
+            <td style="width: 100px; text-align: center">${listChuyenBay[i].getNoiDen()}</td>
+        </tr>`;
+        }
+        document.getElementById("result").innerHTML = danhSach + "</table>";
+    }
+
+    function xoaChuyenBay() {
+        let maChuyenBay = prompt("Hãy nhập mã chuyến bay bạn cần xóa vào");
+        let check = false;
+        for (let k = 0; k < listChuyenBay.length; k++) {
+            if (listChuyenBay[k].getMaChuyenBay() === maChuyenBay) {
+                check = true;
+                if (confirm("Bạn có chắc chắn muốn xóa chuyến bay này không?")) {
+                    listChuyenBay.splice(k, 1);
+                    hienThiDanhSachChuyenBay();
+                } else {
+                    alert("Đã hủy");
+                }
+            }
+        }
+        if (check === false) {
+            alert("Không tìm thấy chuyến bay bạn cần xóa!");
+        }
+    }
+</script>
+</body>
+</html>
